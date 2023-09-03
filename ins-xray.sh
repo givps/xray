@@ -1,6 +1,6 @@
 #!/bin/bash
 # pewarna hidup
-BGreen='\e[1;32m' 
+BGreen='\e[1;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"

@@ -1,4 +1,9 @@
 #!/bin/bash
+cd
+rm -rf ins-xray.sh
+# pewarna hidup
+BGreen='\e[1;32m'
+NC='\e[0m'
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
@@ -533,4 +538,10 @@ if [ -f /root/scdomain ];then
 rm /root/scdomain > /dev/null 2>&1
 fi
 clear
-rm -f ins-xray.sh  
+cd
+rm -rf ins-xray.sh
+echo -e "\e[1;32m auto reboot in 5s \e[0m"
+sleep 5
+reboot
+
+
